@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --steam-dark: #171a21;
+  --steam-card: #1b2838;
+  --steam-light: #2a475e;
+  --steam-blue: #66c0f4;
+}
+
+body {
+  background: var(--steam-dark);
+  color: #c7d5e0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.steam-card {
+  background: linear-gradient(180deg, #1b2838 0%, #16202d 100%);
+  border: 1px solid #2a475e;
+  transition: all 0.2s ease;
+}
+
+.steam-card:hover {
+  border-color: #66c0f4;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(102, 192, 244, 0.15);
+}
+
+.steam-btn {
+  background: linear-gradient(180deg, #66c0f4 0%, #4192c0 100%);
+  color: #171a21;
+  font-weight: 700;
+  padding: 8px 24px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.steam-btn:hover {
+  background: linear-gradient(180deg, #8fd1f7 0%, #66c0f4 100%);
+}
+
+.game-canvas {
+  image-rendering: pixelated;
+}
